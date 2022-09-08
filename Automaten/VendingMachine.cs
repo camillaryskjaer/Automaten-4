@@ -10,7 +10,18 @@ namespace Automaten
 {
     internal class VendingMachine
     {
+        private bool exit;
+        GUI gui = new GUI();
         Dictionary<string, Product> products = new Dictionary<string, Product>();
+        public void test()
+        {
+            do
+            {
+                gui.MenuClear();
+                gui.MainMenu(products);
 
+            } while (exit != true);
+
+        }
     }
 }

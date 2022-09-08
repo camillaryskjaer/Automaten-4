@@ -8,6 +8,12 @@ namespace Automaten.Products
 {
     internal class Drink : Product
     {
+        public Drink(string name, string dictionaryKey, int cost)
+        {
+            this.name = name;
+            this.dictionaryKey = dictionaryKey;
+            this.cost = cost;
+        }
         private string name;
         private string dictionaryKey;
         private int cost;

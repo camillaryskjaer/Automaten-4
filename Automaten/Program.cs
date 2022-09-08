@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-
+            VendingMachine machine = new VendingMachine();
+            machine.test();
         }
     }
 }
