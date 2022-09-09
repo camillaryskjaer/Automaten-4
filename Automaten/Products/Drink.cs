@@ -8,17 +8,20 @@ namespace Automaten.Products
 {
     internal class Drink : Product
     {
-        public Drink(string name, string dictionaryKey, int cost)
+        public Drink(string name, string dictionaryKey, int cost, int amount)
         {
             this.name = name;
             this.dictionaryKey = dictionaryKey;
             this.cost = cost;
+            this.amount = amount;
         }
         private string name;
         private string dictionaryKey;
         private int cost;
-        public override string Name { get { return name; } }
-        internal override string DicitonaryKey { get { return dictionaryKey; } set { dictionaryKey = value; } }
+        private int amount;
+        public override string Name { get { return name; } set { name = value; } }
+        internal override int Amount { get { return amount; } set { amount = value; } }
+        internal override string DicitonaryKey { get { return dictionaryKey; } }
         internal override int Cost { get { return cost; } set { cost = value; } }
     }
 }
