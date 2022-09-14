@@ -14,6 +14,8 @@ namespace Automaten
         private bool exit;
 
         //Creates a GUI objekt, MoneyBox objekt and a dictionary of string and products, with the string as keys and product as values
+        
+        //UHA din vendingmaskine må ikke vide noget om din GUI
         GUI gui = new GUI();
         MoneyBox moneyBox = new MoneyBox();
         Dictionary<string, Product> products = new Dictionary<string, Product>();
